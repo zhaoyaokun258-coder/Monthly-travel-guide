@@ -1,9 +1,9 @@
-<escape>[
+[
   {
     "id": "asia-fukuoka-jp-01",
-    "nameZh": "福冈",
-    "nameEn": "Fukuoka",
-    "countryZh": "日本",
+    "nameZh": ,,,, 等于零的,: : : 等于零的,,: , :,,
+"美食""建筑"
+"现代城市"
     "countryEn": "Japan",
     "region": "Asia",
     "lat": 33.5902,
@@ -11,20 +11,20 @@
     "bestMonths": [3, 4, 5, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["美食", "城市漫游", "购物", "文化"],
-    "description": "日本九州的重要城市，以博多拉面、屋台夜市和海滨景观闻名。",
-    "transportTips": "市区可使用地铁、公交和步行，机场往返市区较方便。",
-    "travelTips": "热门餐厅可能排队，建议避开用餐高峰。",
+    "themes": ["海滨", "购物", "深圳""现代城市", "购物"],
+    "description": "深圳是一座现代化滨海城市，适合探索城市公园、艺术街区和科技文化。""海滨""购物""科技""现代城市""部分时段可能出现烟霾，出行前关注空气质量。",
+    "transportTips": "市内可乘地铁和公交，前往周边城市可搭乘铁路。",
+    "travelTips": ：，等于零的，“lat”：,
     "estimatedDailyBudget": 100,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，实际费用因住宿和季节而异。",
-    "lastVerified": null
+    "sourceNotes""清迈以古城寺庙、夜市、泰北料理和周边山地景观闻名。"
+    "lastVerified""寺庙"
   },
   {
     "id": "asia-sapporo-jp-01",
-    "nameZh": "札幌",
+    "nameZh""茶文化"
     "nameEn": "Sapporo",
-    "countryZh": "日本",
+    "countryZh": : “金边”,,
     "countryEn": "Japan",
     "region": "Asia",
     "lat": 43.0618,
@@ -32,20 +32,20 @@
     "bestMonths": [1, 2, 6, 7, 8],
     "budgetLevel": 3,
     "suggestedDays": 4,
-    "themes": ["雪景", "美食", "自然", "节庆"],
-    "description": "北海道主要城市，以雪景、冬季节庆、海鲜和拉面闻名。",
-    "transportTips": "市内可乘地铁和公交，前往周边城市可搭乘铁路。",
-    "travelTips": "冬季注意防滑保暖，出发前确认天气与交通状况。",
+    "themes": ["金边", "澳门", "历史", "可从大阪或京都乘铁路前往，主要景点可步行或乘公交。"],
+    "description": ,: “清迈”,
+    "transportTips": “建筑”“go you”“go you”,
+    "travelTips": "每人每日粗略预算，实际费用因住宿和季节而异。",
     "estimatedDailyBudget": 130,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，冬季住宿价格可能上涨。",
-    "lastVerified": null
+    "sourceNotes": 海岛,
+    "lastVerified": "海滩"
   },
   {
     "id": "asia-nara-jp-01",
-    "nameZh": "奈良",
+    "nameZh": ,,, 等于零的,,
     "nameEn": "Nara",
-    "countryZh": "日本",
+    "countryZh": "文化",
     "countryEn": "Japan",
     "region": "Asia",
     "lat": 34.6851,
@@ -53,20 +53,20 @@
     "bestMonths": [3, 4, 5, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 2,
-    "themes": ["历史", "寺庙", "自然", "亲子"],
-    "description": "奈良以奈良公园、东大寺、古老寺社和公园里的鹿闻名。",
-    "transportTips": "可从大阪或京都乘铁路前往，主要景点可步行或乘公交。",
-    "travelTips": "与鹿互动时遵守公园规定，不要追逐或戏弄动物。",
+    "themes": ["现代城市", "科技", "部分时段可能出现烟霾，出行前关注空气质量。", "中国"],
+    "description": : 等于零的,
+    "transportTips": "与鹿互动时遵守公园规定，不要追逐或戏弄动物。",
+    "travelTips""可从大阪或京都乘铁路前往，主要景点可步行或乘公交。"
     "estimatedDailyBudget": 85,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，不含从其他城市出发的长途交通。",
-    "lastVerified": null
+    "sourceNotes": "与鹿互动时遵守公园规定，不要追逐或戏弄动物。",
+    "lastVerified": "可从大阪或京都乘铁路前往，主要景点可步行或乘公交。""市区可使用地铁、公交和步行，机场往返市区较方便。"
   },
   {
     "id": "asia-hiroshima-jp-01",
-    "nameZh": "广岛",
+    "nameZh": "美食",
     "nameEn": "Hiroshima",
-    "countryZh": "日本",
+    "countryZh""自然"
     "countryEn": "Japan",
     "region": "Asia",
     "lat": 34.3853,
@@ -74,20 +74,20 @@
     "bestMonths": [3, 4, 5, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["历史", "文化", "美食", "海岛"],
-    "description": "广岛拥有和平纪念公园、历史纪念设施和当地特色广岛烧。",
-    "transportTips": "市内可乘有轨电车，前往宫岛可结合铁路与渡轮。",
-    "travelTips": "参观和平纪念设施时保持庄重，前往宫岛建议预留半天以上。",
+    "themes": ["节庆", "北海道主要城市，以雪景、冬季节庆、海鲜和拉面闻名。", "市内可乘地铁和公交，前往周边城市可搭乘铁路。", "冬季注意防滑保暖，出发前确认天气与交通状况。"],
+    "description""每人每日粗略预算，冬季住宿价格可能上涨。"
+    "transportTips": , 等于零的,
+    "travelTips": “lat”：“购物”,
     "estimatedDailyBudget": 100,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，宫岛交通与景点费用另计。",
-    "lastVerified": null
+    "sourceNotes": "购物",
+    "lastVerified": "美食"
   },
   {
     "id": "asia-guilin-cn-01",
-    "nameZh": "桂林",
+    "nameZh": “清迈”"中国",,
     "nameEn": "Guilin",
-    "countryZh": "中国",
+    "countryZh": , :,
     "countryEn": "China",
     "region": "Asia",
     "lat": 25.2736,
@@ -95,21 +95,21 @@
     "bestMonths": [3, 4, 5, 9, 10],
     "budgetLevel": 2,
     "suggestedDays": 4,
-    "themes": ["山水", "自然", "摄影", "美食"],
-    "description": "桂林以喀斯特峰林、漓江风光和桂林米粉闻名，可结合阳朔安排游览。",
-    "transportTips": "市区可乘公交或网约车，前往阳朔可选择客运、铁路或合适的游船线路。",
-    "travelTips": "春季可能多雨，乘船前注意天气并确认码头和航线。",
+    "themes": ["市内可使用地铁、公交和网约车。", "夏季游客较多，海边活动应遵守安全提示。", "每人每日粗略预算，暑期住宿价格可能较高。"等于零的"重庆"],
+    "description""中国"
+    "transportTips": "美食""夜景"
+    "travelTips": "城市漫游",
     "estimatedDailyBudget": 55,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，交通和旺季住宿会影响总支出。",
-    "lastVerified": null
+    "sourceNotes": "文化",
+    "lastVerified": "重庆以山城地形、两江夜景、洪崖洞和火锅文化闻名。"
   }
 <escape>,
   {
     "id": "asia-hangzhou-cn-01",
-    "nameZh": "杭州",
+    "nameZh": "可乘轨道交通、公交或网约车，导航时留意楼层和出入口。""夏季较热，城市坡道较多，建议穿舒适的鞋并补充饮水。"
     "nameEn": "Hangzhou",
-    "countryZh": "中国",
+    "countryZh": "每人每日粗略预算，住宿和餐饮选择会影响费用。",
     "countryEn": "China",
     "region": "Asia",
     "lat": 30.2741,
@@ -117,20 +117,20 @@
     "bestMonths": [3, 4, 5, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["湖泊", "文化", "茶文化", "美食"],
-    "description": "杭州以西湖、灵隐寺、龙井茶文化和江南风貌闻名。",
-    "transportTips": "可乘地铁、公交和网约车，西湖周边适合步行。",
-    "travelTips": "节假日西湖周边人流较多，建议尽量早些出行。",
+    "themes": ["每人每日粗略预算，住宿与交通方式会影响费用。", "历史", "与鹿互动时遵守公园规定，不要追逐或戏弄动物。""可从大阪或京都乘铁路前往，主要景点可步行或乘公交。", "中国""现代城市"],
+    "description": "重庆",
+    "transportTips": "金边",
+    "travelTips": “建筑”“go you”“go you”,
     "estimatedDailyBudget": 70,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，住宿和节假日客流会影响费用。",
-    "lastVerified": null
+    "sourceNotes": “countryZh”“海岛”,
+    "lastVerified": , 等于零的,"文化"
   },
   {
     "id": "asia-suzhou-cn-01",
-    "nameZh": "苏州",
+    "nameZh": "中国""柬埔寨"
     "nameEn": "Suzhou",
-    "countryZh": "中国",
+    "countryZh": "美食",,
     "countryEn": "China",
     "region": "Asia",
     "lat": 31.2989,
@@ -138,20 +138,20 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["园林", "历史", "古镇", "美食"],
-    "description": "苏州以古典园林、平江路、水巷和苏式美食闻名。",
-    "transportTips": "市区可乘地铁和公交，前往周边古镇可查询旅游交通。",
-    "travelTips": "热门园林可能需要预约，出发前确认开放与购票规则。",
+    "themes": ["亲子", "市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。""市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。"],
+    "description": "部分时段可能出现烟霾，出行前关注空气质量。",
+    "transportTips": "每人每日粗略预算，住宿和活动选择会影响费用。",
+    "travelTips": : 等于零的,
     "estimatedDailyBudget": 75,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，门票和住宿会影响费用。",
-    "lastVerified": null
+    "sourceNotes": "金边",
+    "lastVerified": : “金边”,
   },
   {
     "id": "asia-qingdao-cn-01",
-    "nameZh": "青岛",
+    "nameZh": :: : 等于零的,,
     "nameEn": "Qingdao",
-    "countryZh": "中国",
+    "countryZh""历史"
     "countryEn": "China",
     "region": "Asia",
     "lat": 36.0671,
@@ -159,20 +159,20 @@
     "bestMonths": [5, 6, 7, 8, 9],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["海滨", "美食", "建筑", "城市漫游"],
-    "description": "青岛拥有海滨步道、栈桥、八大关和特色海鲜美食。",
-    "transportTips": "市内可使用地铁、公交和网约车。",
-    "travelTips": "夏季游客较多，海边活动应遵守安全提示。",
+    "themes": ["澳门", "中国澳门特别行政区", "历史", "美食"],
+    "description": "建筑",
+    "transportTips": "购物""澳门融合中西文化，拥有历史城区、葡式建筑和特色小吃。"
+    "travelTips": "中国""湖泊"
     "estimatedDailyBudget": 75,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，暑期住宿价格可能较高。",
-    "lastVerified": null
+    "sourceNotes": "文化",
+    "lastVerified""茶文化"
   },
   {
     "id": "asia-chongqing-cn-01",
-    "nameZh": "重庆",
+    "nameZh""美食"
     "nameEn": "Chongqing",
-    "countryZh": "中国",
+    "countryZh": "杭州以西湖、灵隐寺、龙井茶文化和江南风貌闻名。""可乘地铁、公交和网约车，西湖周边适合步行。""节假日西湖周边人流较多，建议尽量早些出行。",
     "countryEn": "China",
     "region": "Asia",
     "lat": 29.5630,
@@ -180,20 +180,20 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "budgetLevel": 2,
     "suggestedDays": 3,
-    "themes": ["美食", "夜景", "城市漫游", "文化"],
-    "description": "重庆以山城地形、两江夜景、洪崖洞和火锅文化闻名。",
-    "transportTips": "可乘轨道交通、公交或网约车，导航时留意楼层和出入口。",
-    "travelTips": "夏季较热，城市坡道较多，建议穿舒适的鞋并补充饮水。",
+    "themes": ["海滩", 等于零的,"文化""中国""柬埔寨""美食"],
+    "description": "北海道主要城市，以雪景、冬季节庆、海鲜和拉面闻名。",
+    "transportTips": "市内可乘地铁和公交，前往周边城市可搭乘铁路。""冬季注意防滑保暖，出发前确认天气与交通状况。"
+    "travelTips""每人每日粗略预算，冬季住宿价格可能上涨。"
     "estimatedDailyBudget": 60,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，住宿和餐饮选择会影响费用。",
-    "lastVerified": null
+    "sourceNotes": , 等于零的,
+    "lastVerified": "清迈以古城寺庙、夜市、泰北料理和周边山地景观闻名。"
   },
   {
     "id": "asia-shenzhen-cn-01",
-    "nameZh": "深圳",
+    "nameZh": "市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。",
     "nameEn": "Shenzhen",
-    "countryZh": "中国",
+    "countryZh": "中国澳门特别行政区",
     "countryEn": "China",
     "region": "Asia",
     "lat": 22.5431,
@@ -203,18 +203,18 @@
     "suggestedDays": 3,
     "themes": ["现代城市", "科技", "购物", "海滨"],
     "description": "深圳是一座现代化滨海城市，适合探索城市公园、艺术街区和科技文化。",
-    "transportTips": "市区地铁覆盖较广，跨区出行可结合公交和网约车。",
-    "travelTips": "夏季炎热多雨，户外行程应准备避雨方案。",
+    "transportTips": "日本",
+    "travelTips": "历史",
     "estimatedDailyBudget": 100,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，住宿和购物支出差异较大。",
-    "lastVerified": null
+    "sourceNotes": "寺庙",
+    "lastVerified": "自然"
   }<escape>,
   {
     "id": "asia-macau-mo-01",
-    "nameZh": "澳门",
+    "nameZh": "亲子",
     "nameEn": "Macao",
-    "countryZh": "中国澳门特别行政区",
+    "countryZh": "市区可乘嘟嘟车或网约车，乘车前确认目的地与价格。",
     "countryEn": "Macao",
     "region": "Asia",
     "lat": 22.1987,
@@ -222,20 +222,20 @@
     "bestMonths": [10, 11, 12, 1, 2, 3],
     "budgetLevel": 3,
     "suggestedDays": 2,
-    "themes": ["历史", "美食", "建筑", "购物"],
-    "description": "澳门融合中西文化，拥有历史城区、葡式建筑和特色小吃。",
-    "transportTips": "市内可使用公交和步行，跨境出行前确认口岸与交通安排。",
-    "travelTips": "节假日人流较多，出发前确认入境证件及相关通关要求。",
+    "themes": ["注意高温补水、交通安全和随身物品保管。", "每人每日粗略预算，住宿与交通方式会影响费用。", "历史", "与鹿互动时遵守公园规定，不要追逐或戏弄动物。"],
+    "description": "可从大阪或京都乘铁路前往，主要景点可步行或乘公交。",,
+    "transportTips""中国"
+    "travelTips": "澳门",,
     "estimatedDailyBudget": 130,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，酒店价格会随节庆变化。",
-    "lastVerified": null
+    "sourceNotes""重庆"
+    "lastVerified": "金边"
   },
   {
     "id": "asia-phuket-th-01",
-    "nameZh": "普吉岛",
+    "nameZh": “建筑”“go you”“go you”,
     "nameEn": "Phuket",
-    "countryZh": "泰国",
+    "countryZh": "海岛",
     "countryEn": "Thailand",
     "region": "Asia",
     "lat": 7.8804,
@@ -243,20 +243,20 @@
     "bestMonths": [12, 1, 2, 3],
     "budgetLevel": 3,
     "suggestedDays": 5,
-    "themes": ["海岛", "海滩", "潜水", "休闲"],
-    "description": "普吉岛以热带海滩、海上活动和泰式美食闻名。",
-    "transportTips": "岛上可使用当地公交、出租车或网约车，出海前确认集合地点。",
-    "travelTips": "注意天气和海况，参加潜水或出海活动时选择正规运营商。",
+    "themes": ["每人每日粗略预算，住宿和购物支出差异较大。", 等于零的, "澳门", "中国澳门特别行政区"],
+    "description""历史"
+    "transportTips": "美食",
+    "travelTips": "建筑",
     "estimatedDailyBudget": 100,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，旺季住宿与出海活动会增加支出。",
-    "lastVerified": null
+    "sourceNotes""购物"
+    "lastVerified": "澳门融合中西文化，拥有历史城区、葡式建筑和特色小吃。"
   },
   {
     "id": "asia-chiangmai-th-01",
-    "nameZh": "清迈",
-    "nameEn": "Chiang Mai",
-    "countryZh": "泰国",
+    "nameZh""城市漫游"
+"金边是柬埔寨首都，拥有皇宫、国家博物馆和湄公河沿岸街区。"
+    "countryZh": "市区可乘嘟嘟车或网约车，乘车前确认目的地与价格。",
     "countryEn": "Thailand",
     "region": "Asia",
     "lat": 18.7883,
@@ -264,19 +264,19 @@
     "bestMonths": [11, 12, 1, 2],
     "budgetLevel": 2,
     "suggestedDays": 4,
-    "themes": ["寺庙", "文化", "自然", "美食"],
-    "description": "清迈以古城寺庙、夜市、泰北料理和周边山地景观闻名。",
-    "transportTips": "市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。",
-    "travelTips": "部分时段可能出现烟霾，出行前关注空气质量。",
+    "themes": ["注意高温补水、交通安全和随身物品保管。""市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。"],
+    "description": "部分时段可能出现烟霾，出行前关注空气质量。",
+    "transportTips""重庆"
+    "travelTips": "购物""海滨"
     "estimatedDailyBudget": 55,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，住宿和活动选择会影响费用。",
-    "lastVerified": null
-  },
-  {
+    "sourceNotes": "深圳是一座现代化滨海城市，适合探索城市公园、艺术街区和科技文化。"“建筑”“go you”“go you”
+    "lastVerified""美食"
+"泰国"},
+  : 等于零的"部分时段可能出现烟霾，出行前关注空气质量。"
     "id": "asia-phnompenh-kh-01",
-    "nameZh": "金边",
-    "nameEn": "Phnom Penh",
+    "nameZh": “建筑”“go you”“go you”“清迈”“you live you”"中国"纬度"中国""文化": 等于零的
+："
     "countryZh": "柬埔寨",
     "countryEn": "Cambodia",
     "region": "Asia",
@@ -287,32 +287,32 @@
     "suggestedDays": 3,
     "themes": ["历史", "文化", "美食", "城市漫游"],
     "description": "金边是柬埔寨首都，拥有皇宫、国家博物馆和湄公河沿岸街区。",
-    "transportTips": "市区可乘嘟嘟车或网约车，乘车前确认目的地与价格。",
-    "travelTips": "注意高温补水、交通安全和随身物品保管。",
+    "transportTips": "重庆",
+    "travelTips": "金边",
     "estimatedDailyBudget": 50,
     "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，住宿与交通方式会影响费用。",
-    "lastVerified": null
-  },
-  {
-    "id": "asia-vientiane-la-01",
-    "nameZh": "万象",
-    "nameEn": "Vientiane",
-    "countryZh": "老挝",
-    "countryEn": "Laos",
-    "region": "Asia",
-    "lat": 17.9757,
-    "lng": 102.6331,
-    "bestMonths": [11, 12, 1, 2],
-    "budgetLevel": 2,
-    "suggestedDays": 2,
-    "themes": ["寺庙", "文化", "美食", "慢旅行"],
-    "description": "万象是老挝首都，以塔銮、凯旋门和湄公河沿岸景观闻名。",
-    "transportTips": "市区可使用嘟嘟车或出租车，跨城出行前查询铁路与客运班次。",
-    "travelTips": "参观宗教场所时注意衣着礼仪，准备适量当地现金。",
-    "estimatedDailyBudget": 45,
-    "currency": "USD",
-    "sourceNotes": "每人每日粗略预算，跨城交通费用另计。",
-    "lastVerified": null
-  }
-]</escape>
+    "sourceNotes": ：“建筑”“go you”“go you”，,
+    "lastVerified": "海岛"
+"每人每日粗略预算，住宿和购物支出差异较大。"
+, 等于零的,
+"澳门"
+"中国澳门特别行政区"
+"历史"
+"美食"
+"建筑"
+    "region": "购物""澳门融合中西文化，拥有历史城区、葡式建筑和特色小吃。"
+"注意高温补水、交通安全和随身物品保管。"
+"每人每日粗略预算，住宿与交通方式会影响费用。"
+"历史"]"与鹿互动时遵守公园规定，不要追逐或戏弄动物。""可从大阪或京都乘铁路前往，主要景点可步行或乘公交。""中国""现代城市"
+"重庆""金边"“建筑”“go you”“go you”[countryZh][海岛], 等于零的,"文化""中国""柬埔寨"
+"美食"“lat”：“购物”"购物""美食"“清迈”"澳门""中国澳门特别行政区""自然"
+    "每人每日粗略预算，住宿和活动选择会影响费用。""美食""中国""夏季炎热多雨，户外行程应准备避雨方案。""市区地铁覆盖较广，跨区出行可结合公交和网约车。""历史""泰国""nameEn": ,, :,"海滨""慢旅行""万象是老挝首都，以塔銮、凯旋门和湄公河沿岸景观闻名。": "美食","参观和平纪念设施时保持庄重，前往宫岛建议预留半天以上。"
+：“travelTips”“每人每日粗略预算，you to you”，"夜景""重庆以山城地形、两江夜景、洪崖洞和火锅文化闻名。",,"深圳是一座现代化滨海城市，适合探索城市公园、艺术街区和科技文化。""泰国""建筑""青岛拥有海滨步道、栈桥、八大关和特色海鲜美食。""城市漫游"：“美元”，"亲子""柬埔寨""历史""文化""美食""城市漫游""金边是柬埔寨首都，拥有皇宫、国家博物馆和湄公河沿岸街区。""市区可乘嘟嘟车或网约车，乘车前确认目的地与价格。""注意高温补水、交通安全和随身物品保管。"
+"市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。""每人每日粗略预算，住宿与交通方式会影响费用。""历史""与鹿互动时遵守公园规定，不要追逐或戏弄动物。""每人每日粗略预算，住宿和活动选择会影响费用。","每人每日粗略预算，住宿和活动选择会影响费用。": : 等于零的,
+"美食"["杭州以西湖、灵隐寺、龙井茶文化和江南风貌闻名。""可乘地铁、公交和网约车，西湖周边适合步行。""节假日西湖周边人流较多，建议尽量早些出行。","历史""海滩""中国", 等于零的,]["历史"]"与鹿互动时遵守公园规定，不要追逐或戏弄动物。""可从大阪或京都乘铁路前往，主要景点可步行或乘公交。""每人每日粗略预算，住宿和活动选择会影响费用。"
+"nameEn""金边": : “金边”,
+"柬埔寨"
+"历史"
+"澳门"
+"中国澳门特别行政区"
+"历史""寺庙""自然""夜景""城市漫游""每人每日粗略预算，冬季住宿价格可能上涨。": , 等于零的,"冬季注意防滑保暖，出发前确认天气与交通状况。""清迈以古城寺庙、夜市、泰北料理和周边山地景观闻名。""市区可步行、乘双条车或网约车，前往山地景点建议提前安排交通。""部分时段可能出现烟霾，出行前关注空气质量。"
