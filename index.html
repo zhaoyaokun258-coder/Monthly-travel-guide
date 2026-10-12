@@ -1,1 +1,835 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#176b57">
+<title>月行指南｜全球旅游推荐</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  background: #f5f7f4;
+  color: #20332d;
+  line-height: 1.6;
+}
+header {
+  background: #176b57;
+  color: white;
+  padding: 22px 16px;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+header p {
+  margin: 6px 0 0;
+}
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px;
+}
+.panel {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 14px #173d2d0d;
+}
+h2 {
+  margin-top: 0;
+}
+.filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+input, select, button {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  border-radius: 9px;
+  border: 1px solid #d6dfd9;
+  font: inherit;
+}
+button {
+  border: 0;
+  background: #176b57;
+  color: white;
+  cursor: pointer;
+}
+button.secondary {
+  background: #e4eee8;
+  color: #176b57;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.actions button {
+  flex: 1;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.card {
+  background: white;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px #173d2d0d;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.card-content {
+  padding: 12px;
+}
+.card h3 {
+  margin: 0 0 6px;
+}
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.card button {
+  margin-top: 8px;
+}
+#map {
+  height: 320px;
+  border-radius: 12px;
+  background: #e4eee8;
+}
+footer {
+  text-align: center;
+  color: #63746b;
+  padding: 24px 12px;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  #results {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    height: 210px;
+  }
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>月行指南</h1>
+  <p>发现世界，规划下一段旅程。</p>
+</header>
+<main>
+  <section class="panel">
+    <h2>寻找你的旅行目的地</h2>
+    <input id="search" placeholder="搜索国家、城市或景点">
+    <div class="filters">
+      <select id="month">
+        <option value="">全部月份</option>
+        <option value="1">1 月</option>
+        <option value="2">2 月</option>
+        <option value="3">3 月</option>
+        <option value="4">4 月</option>
+        <option value="5">5 月</option>
+        <option value="6">6 月</option>
+        <option value="7">7 月</option>
+        <option value="8">8 月</option>
+        <option value="9">9 月</option>
+        <option value="10">10 月</option>
+        <option value="11">11 月</option>
+        <option value="12">12 月</option>
+      </select>
+      <select id="region">
+        <option value="">全部地区</option>
+        <option>亚洲</option>
+        <option>欧洲</option>
+        <option>非洲</option>
+        <option>北美洲</option>
+        <option>南美洲</option>
+        <option>大洋洲</option>
+      </select>
+      <select id="budget">
+        <option value="">全部预算</option>
+        <option>经济</option>
+        <option>中等</option>
+        <option>较高</option>
+      </select>
+      <select id="theme">
+        <option value="">全部主题</option>
+        <option>自然风光</option>
+        <option>文化古迹</option>
+        <option>海岛海滩</option>
+        <option>城市漫游</option>
+        <option>休闲度假</option>
+      </select>
+    </div>
+    <div class="actions">
+      <button id="random">随机推荐</button>
+      <button id="reset" class="secondary">重置筛选</button>
+    </div>
+    <p id="count">正在准备目的地……</p>
+  </section>
+
+  <section>
+    <h2>精选目的地</h2>
+    <div id="results"></div>
+  </section>
+
+  <section class="panel">
+    <h2>旅行地图</h2>
+    <div id="map"></div>
+    <p>地图需要联网加载。</p>
+  </section>
+
+  <section class="panel">
+    <h2>我的收藏</h2>
+    <div id="favorites">暂时还没有收藏。</div>
+  </section>
+
+  <section class="panel">
+    <h2>出行提示</h2>
+    <p>出发前请核对签证、天气、交通、当地规定和景点开放时间。</p>
+    <p>网站中的预算仅作初步参考，请以实际预订价格为准。</p>
+  </section>
+</main>
+<footer>月行指南 · 让每一次出发都有方向</footer>
+
+<!-- PART 1 END -->
+
+<script>
+const places = [
+  {
+    name: "京都",
+    country: "日本",
+    region: "亚洲",
+    month: [3, 4, 10, 11],
+    budget: "中等",
+    theme: "文化古迹",
+    lat: 35.0116,
+    lng: 135.7681,
+    desc: "游览古老街巷、寺庙和传统日式建筑。",
+    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "杭州",
+    country: "中国",
+    region: "亚洲",
+    month: [3, 4, 5, 9, 10],
+    budget: "经济",
+    theme: "自然风光",
+    lat: 30.2741,
+    lng: 120.1551,
+    desc: "欣赏西湖风光、苏堤和江南园林。",
+    image: "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "清迈",
+    country: "泰国",
+    region: "亚洲",
+    month: [11, 12, 1, 2],
+    budget: "经济",
+    theme: "休闲度假",
+    lat: 18.7883,
+    lng: 98.9853,
+    desc: "探索古城寺庙、夜市和泰北美食。",
+    image: "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "巴黎",
+    country: "法国",
+    region: "欧洲",
+    month: [4, 5, 6, 9, 10],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: 48.8566,
+    lng: 2.3522,
+    desc: "参观博物馆、历史建筑和街边咖啡馆。",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "罗马",
+    country: "意大利",
+    region: "欧洲",
+    month: [4, 5, 9, 10],
+    budget: "较高",
+    theme: "文化古迹",
+    lat: 41.9028,
+    lng: 12.4964,
+    desc: "探访古罗马遗迹、广场和意大利美食。",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "因特拉肯",
+    country: "瑞士",
+    region: "欧洲",
+    month: [6, 7, 8, 9],
+    budget: "较高",
+    theme: "自然风光",
+    lat: 46.6863,
+    lng: 7.8632,
+    desc: "欣赏阿尔卑斯山、湖泊和山间小镇。",
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "开罗",
+    country: "埃及",
+    region: "非洲",
+    month: [10, 11, 12, 1, 2, 3],
+    budget: "中等",
+    theme: "文化古迹",
+    lat: 30.0444,
+    lng: 31.2357,
+    desc: "了解古埃及文明，探索金字塔和博物馆。",
+    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "纽约",
+    country: "美国",
+    region: "北美洲",
+    month: [4, 5, 6, 9, 10],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: 40.7128,
+    lng: -74.0060,
+    desc: "体验城市天际线、公园和世界级博物馆。",
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "班夫",
+    country: "加拿大",
+    region: "北美洲",
+    month: [6, 7, 8, 9],
+    budget: "较高",
+    theme: "自然风光",
+    lat: 51.1784,
+    lng: -115.5708,
+    desc: "欣赏雪山、冰川湖和国家公园步道。",
+    image: "https://images.unsplash.com/photo-1503614472-8c93d56cd5b8?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "坎昆",
+    country: "墨西哥",
+    region: "北美洲",
+    month: [12, 1, 2, 3, 4],
+    budget: "中等",
+    theme: "海岛海滩",
+    lat: 21.1619,
+    lng: -86.8515,
+    desc: "享受加勒比海沙滩、海水活动和玛雅文化。",
+    image: "https://images.unsplash.com/photo-1510097467424-76a6b805f3f7?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "里约热内卢",
+    country: "巴西",
+    region: "南美洲",
+    month: [5, 6, 7, 8, 9],
+    budget: "中等",
+    theme: "海岛海滩",
+    lat: -22.9068,
+    lng: -43.1729,
+    desc: "欣赏海岸线、山海景观和当地文化。",
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "悉尼",
+    country: "澳大利亚",
+    region: "大洋洲",
+    month: [9, 10, 11, 12, 1, 2, 3],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: -33.8688,
+    lng: 151.2093,
+    desc: "游览歌剧院、海港大桥和城市海滩。",
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "皇后镇",
+    country: "新西兰",
+    region: "大洋洲",
+    month: [12, 1, 2, 3],
+    budget: "较高",
+    theme: "自然风光",
+    lat: -45.0312,
+    lng: 168.6626,
+    desc: "欣赏湖泊与群山，体验徒步和户外活动。",
+    image: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=900&q=80"
+  }
+];
+</script>
+<!-- PART 2 END -->
+
+<script>
+const places = [
+  {
+    name: "京都",
+    country: "日本",
+    region: "亚洲",
+    month: [3, 4, 10, 11],
+    budget: "中等",
+    theme: "文化古迹",
+    lat: 35.0116,
+    lng: 135.7681,
+    desc: "游览古老街巷、寺庙和传统日式建筑。",
+    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "杭州",
+    country: "中国",
+    region: "亚洲",
+    month: [3, 4, 5, 9, 10],
+    budget: "经济",
+    theme: "自然风光",
+    lat: 30.2741,
+    lng: 120.1551,
+    desc: "欣赏西湖风光、苏堤和江南园林。",
+    image: "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "清迈",
+    country: "泰国",
+    region: "亚洲",
+    month: [11, 12, 1, 2],
+    budget: "经济",
+    theme: "休闲度假",
+    lat: 18.7883,
+    lng: 98.9853,
+    desc: "探索古城寺庙、夜市和泰北美食。",
+    image: "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "巴黎",
+    country: "法国",
+    region: "欧洲",
+    month: [4, 5, 6, 9, 10],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: 48.8566,
+    lng: 2.3522,
+    desc: "参观博物馆、历史建筑和街边咖啡馆。",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "罗马",
+    country: "意大利",
+    region: "欧洲",
+    month: [4, 5, 9, 10],
+    budget: "较高",
+    theme: "文化古迹",
+    lat: 41.9028,
+    lng: 12.4964,
+    desc: "探访古罗马遗迹、广场和意大利美食。",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "因特拉肯",
+    country: "瑞士",
+    region: "欧洲",
+    month: [6, 7, 8, 9],
+    budget: "较高",
+    theme: "自然风光",
+    lat: 46.6863,
+    lng: 7.8632,
+    desc: "欣赏阿尔卑斯山、湖泊和山间小镇。",
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "开罗",
+    country: "埃及",
+    region: "非洲",
+    month: [10, 11, 12, 1, 2, 3],
+    budget: "中等",
+    theme: "文化古迹",
+    lat: 30.0444,
+    lng: 31.2357,
+    desc: "了解古埃及文明，探索金字塔和博物馆。",
+    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "纽约",
+    country: "美国",
+    region: "北美洲",
+    month: [4, 5, 6, 9, 10],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: 40.7128,
+    lng: -74.0060,
+    desc: "体验城市天际线、公园和世界级博物馆。",
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "班夫",
+    country: "加拿大",
+    region: "北美洲",
+    month: [6, 7, 8, 9],
+    budget: "较高",
+    theme: "自然风光",
+    lat: 51.1784,
+    lng: -115.5708,
+    desc: "欣赏雪山、冰川湖和国家公园步道。",
+    image: "https://images.unsplash.com/photo-1503614472-8c93d56cd5b8?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "坎昆",
+    country: "墨西哥",
+    region: "北美洲",
+    month: [12, 1, 2, 3, 4],
+    budget: "中等",
+    theme: "海岛海滩",
+    lat: 21.1619,
+    lng: -86.8515,
+    desc: "享受加勒比海沙滩、海水活动和玛雅文化。",
+    image: "https://images.unsplash.com/photo-1510097467424-76a6b805f3f7?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "里约热内卢",
+    country: "巴西",
+    region: "南美洲",
+    month: [5, 6, 7, 8, 9],
+    budget: "中等",
+    theme: "海岛海滩",
+    lat: -22.9068,
+    lng: -43.1729,
+    desc: "欣赏海岸线、山海景观和当地文化。",
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "悉尼",
+    country: "澳大利亚",
+    region: "大洋洲",
+    month: [9, 10, 11, 12, 1, 2, 3],
+    budget: "较高",
+    theme: "城市漫游",
+    lat: -33.8688,
+    lng: 151.2093,
+    desc: "游览歌剧院、海港大桥和城市海滩。",
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "皇后镇",
+    country: "新西兰",
+    region: "大洋洲",
+    month: [12, 1, 2, 3],
+    budget: "较高",
+    theme: "自然风光",
+    lat: -45.0312,
+    lng: 168.6626,
+    desc: "欣赏湖泊与群山，体验徒步和户外活动。",
+    image: "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=900&q=80"
+  }
+];
+</script>
+<!-- PART 2 END -->
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+const searchInput = $("search");
+const monthSelect = $("month");
+const regionSelect = $("region");
+const budgetSelect = $("budget");
+const themeSelect = $("theme");
+const resultsBox = $("results");
+const countBox = $("count");
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function getFilteredPlaces() {
+  const search = searchInput.value.trim().toLowerCase();
+  const month = monthSelect.value;
+  const region = regionSelect.value;
+  const budget = budgetSelect.value;
+  const theme = themeSelect.value;
+
+  return places.filter((place) => {
+    const text = [
+      place.name,
+      place.country,
+      place.region,
+      place.theme,
+      place.desc
+    ].join(" ").toLowerCase();
+
+    return (
+      (!search || text.includes(search)) &&
+      (!month || place.month.includes(Number(month))) &&
+      (!region || place.region === region) &&
+      (!budget || place.budget === budget) &&
+      (!theme || place.theme === theme)
+    );
+  });
+}
+
+function renderCards() {
+  const list = getFilteredPlaces();
+
+  countBox.textContent = "找到 " + list.length + " 个目的地";
+
+  if (list.length === 0) {
+    resultsBox.innerHTML =
+      "<p>没有找到符合条件的目的地，请调整筛选条件。</p>";
+    return;
+  }
+
+  resultsBox.innerHTML = list.map((place) => `
+    <article class="card">
+      <img
+        src="${escapeHTML(place.image)}"
+        alt="${escapeHTML(place.name)}"
+        loading="lazy"
+        onerror="this.alt='图片暂时无法加载';this.style.height='40px'"
+      >
+      <div class="card-content">
+        <h3>${escapeHTML(place.name)}</h3>
+        <p>${escapeHTML(place.country)} · ${escapeHTML(place.region)}</p>
+        <p>${escapeHTML(place.desc)}</p>
+        <p>主题：${escapeHTML(place.theme)}</p>
+        <p>预算：${escapeHTML(place.budget)}</p>
+        <p>适合月份：${place.month.join("、")} 月</p>
+        <button type="button"
+          onclick="toggleFavorite('${escapeHTML(place.name)}')">
+          收藏这个目的地
+        </button>
+      </div>
+    </article>
+  `).join("");
+}
+
+function resetFilters() {
+  searchInput.value = "";
+  monthSelect.value = "";
+  regionSelect.value = "";
+  budgetSelect.value = "";
+  themeSelect.value = "";
+  renderCards();
+}
+
+[
+  searchInput,
+  monthSelect,
+  regionSelect,
+  budgetSelect,
+  themeSelect
+].forEach((element) => {
+  element.addEventListener("input", renderCards);
+  element.addEventListener("change", renderCards);
+});
+
+$("reset").addEventListener("click", resetFilters);
+
+$("random").addEventListener("click", () => {
+  const list = getFilteredPlaces();
+
+  if (list.length === 0) {
+    alert("没有可推荐的目的地，请调整筛选条件。");
+    return;
+  }
+
+  const place = list[Math.floor(Math.random() * list.length)];
+  alert(
+    "今日推荐：" + place.name + "（" + place.country + "）\n\n" +
+    place.desc + "\n\n适合月份：" +
+    place.month.join("、") + " 月"
+  );
+});
+
+renderCards();
+</script>
+<!-- PART 3 END -->
+
+<script>
+let favorites = [];
+
+try {
+  const savedFavorites = localStorage.getItem("yuexing-favorites");
+  favorites = savedFavorites ? JSON.parse(savedFavorites) : [];
+
+  if (!Array.isArray(favorites)) {
+    favorites = [];
+  }
+} catch (error) {
+  favorites = [];
+}
+
+const favoritesBox = document.getElementById("favorites");
+
+function saveFavorites() {
+  try {
+    localStorage.setItem(
+      "yuexing-favorites",
+      JSON.stringify(favorites)
+    );
+  } catch (error) {
+    alert("浏览器无法保存收藏，请检查浏览器设置。");
+  }
+}
+
+function renderFavorites() {
+  const savedPlaces = places.filter((place) =>
+    favorites.includes(place.name)
+  );
+
+  if (savedPlaces.length === 0) {
+    favoritesBox.textContent = "暂时还没有收藏。";
+    return;
+  }
+
+  favoritesBox.innerHTML = savedPlaces.map((place) => `
+    <div style="padding:10px 0;border-bottom:1px solid #e4eee8">
+      <strong>${escapeHTML(place.name)}</strong>
+      <span>（${escapeHTML(place.country)}）</span>
+      <button
+        type="button"
+        class="secondary"
+        style="margin-top:6px"
+        onclick="toggleFavorite('${escapeHTML(place.name)}')">
+        取消收藏
+      </button>
+    </div>
+  `).join("");
+}
+
+function toggleFavorite(name) {
+  if (favorites.includes(name)) {
+    favorites = favorites.filter((item) => item !== name);
+  } else {
+    favorites.push(name);
+  }
+
+  saveFavorites();
+  renderFavorites();
+  renderCards();
+}
+
+renderFavorites();
+</script>
+<!-- PART 4 END -->
+
+<script>
+const mapElement = document.getElementById("map");
+let travelMap = null;
+let travelMarkers = [];
+
+function loadMapLibrary() {
+  if (window.L) {
+    initializeTravelMap();
+    return;
+  }
+
+  if (document.getElementById("leaflet-script")) {
+    const waitForLibrary = setInterval(() => {
+      if (window.L) {
+        clearInterval(waitForLibrary);
+        initializeTravelMap();
+      }
+    }, 300);
+
+    setTimeout(() => clearInterval(waitForLibrary), 15000);
+    return;
+  }
+
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+  document.head.appendChild(css);
+
+  const script = document.createElement("script");
+  script.id = "leaflet-script";
+  script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+
+  script.onload = initializeTravelMap;
+  script.onerror = () => {
+    mapElement.innerHTML =
+      "地图加载失败，请检查网络连接后刷新页面。";
+  };
+
+  document.body.appendChild(script);
+}
+
+function initializeTravelMap() {
+  if (!window.L || travelMap || !mapElement) return;
+
+  travelMap = L.map("map").setView([25, 10], 2);
+
+  L.tileLayer(
+    "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      maxZoom: 18,
+      attribution: "&copy; OpenStreetMap"
+    }
+  ).addTo(travelMap);
+
+  renderTravelMap();
+}
+
+function renderTravelMap() {
+  if (!travelMap) return;
+
+  travelMarkers.forEach((marker) => marker.remove());
+  travelMarkers = [];
+
+  getFilteredPlaces().forEach((place) => {
+    const marker = L.marker([place.lat, place.lng]).addTo(travelMap);
+
+    marker.bindPopup(
+      "<strong>" + escapeHTML(place.name) + "</strong><br>" +
+      escapeHTML(place.country) + "<br>" +
+      escapeHTML(place.desc)
+    );
+
+    travelMarkers.push(marker);
+  });
+}
+
+const oldRenderCards = renderCards;
+
+renderCards = function () {
+  oldRenderCards();
+
+  if (travelMap) {
+    renderTravelMap();
+  }
+};
+
+loadMapLibrary();
+</script>
+<!-- PART 5 END -->
+
+<!-- PART 6 START -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  renderCards();
+  renderFavorites();
+
+  if (typeof renderTravelMap === "function") {
+    renderTravelMap();
+  }
+});
+</script>
+
+</body>
+</html>
+<!-- PART 6 END -->
