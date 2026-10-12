@@ -104,7 +104,7 @@
     "sourceNotes": "文化",
     "lastVerified": "重庆以山城地形、两江夜景、洪崖洞和火锅文化闻名。"
   }
-<escape>,
+,
   {
     "id": "asia-hangzhou-cn-01",
     "nameZh": "可乘轨道交通、公交或网约车，导航时留意楼层和出入口。""夏季较热，城市坡道较多，建议穿舒适的鞋并补充饮水。"
@@ -209,7 +209,7 @@
     "currency": "USD",
     "sourceNotes": "寺庙",
     "lastVerified": "自然"
-  }<escape>,
+  },
   {
     "id": "asia-macau-mo-01",
     "nameZh": "亲子",
