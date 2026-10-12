@@ -85,7 +85,7 @@
   },
   {
     "id": "asia-guilin-cn-01",
-    "nameZh": “清迈”"中国",,
+    "nameZh":[ “清迈”"中国",,]
     "nameEn": "Guilin",
     "countryZh": , :,
     "countryEn": "China",
@@ -107,7 +107,7 @@
 ,
   {
     "id": "asia-hangzhou-cn-01",
-    "nameZh": "可乘轨道交通、公交或网约车，导航时留意楼层和出入口。""夏季较热，城市坡道较多，建议穿舒适的鞋并补充饮水。"
+    "nameZh": ["可乘轨道交通、公交或网约车，导航时留意楼层和出入口。"]"夏季较热，城市坡道较多，建议穿舒适的鞋并补充饮水。"
     "nameEn": "Hangzhou",
     "countryZh": "每人每日粗略预算，住宿和餐饮选择会影响费用。",
     "countryEn": "China",
