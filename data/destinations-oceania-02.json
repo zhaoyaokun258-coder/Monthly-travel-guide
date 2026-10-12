@@ -1,4 +1,4 @@
-<escape>[
+[
   {
     "id": "oceania-goldcoast-au-01",
     "nameZh": "黄金海岸",
@@ -103,8 +103,7 @@
     "currency": "USD",
     "sourceNotes": "每人每日粗略预算，岛际交通与进口商品可能提高旅行成本。",
     "lastVerified": null
-  }
-<escape>,
+  },
   {
     "id": "oceania-apia-ws-02",
     "nameZh": "阿皮亚",
@@ -210,4 +209,4 @@
     "sourceNotes": "每人每日粗略预算，城际交通费用另计。",
     "lastVerified": null
   }
-]</escape>
+]
