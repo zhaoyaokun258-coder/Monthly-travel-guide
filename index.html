@@ -607,7 +607,11 @@ function renderCards() {
         <p>${escapeHTML(place.desc)}</p>
         <p>主题：${escapeHTML(place.theme)}</p>
         <p>预算：${escapeHTML(place.budget)}</p>
-        <p>适合月份：${place.month.join("、")} 月</p>
+                <p>适合月份：${place.month.join("、")} 月</p>
+        <button type="button"
+          onclick="showPlaceDetail('${escapeHTML(place.name)}')">
+          查看详情
+        </button>
         <button type="button"
           onclick="toggleFavorite('${escapeHTML(place.name)}')">
           收藏这个目的地
@@ -617,7 +621,46 @@ function renderCards() {
   `).join("");
 }
 
-function resetFilters() {
+
+  function showPlaceDetail(name) {
+  const place = places.find((item) => item.name === name);
+
+  if (!place) {
+    alert("暂时找不到这个目的地。");
+    return;
+  }
+
+  let dialog = document.getElementById("place-detail-dialog");
+
+  if (!dialog) {
+    dialog = document.createElement("dialog");
+    dialog.id = "place-detail-dialog";
+    dialog.style.cssText =
+      "width:90%;max-width:520px;border:0;border-radius:14px;padding:20px;color:#20332d;";
+
+    document.body.appendChild(dialog);
+  }
+
+  dialog.innerHTML = `
+    <h2>${escapeHTML(place.name)} · 目的地详情</h2>
+    <p><strong>国家或地区：</strong>${escapeHTML(place.country)}</p>
+    <p><strong>所属洲：</strong>${escapeHTML(place.region)}</p>
+    <p><strong>目的地介绍：</strong>${escapeHTML(place.desc)}</p>
+    <p><strong>旅行主题：</strong>${escapeHTML(place.theme)}</p>
+    <p><strong>预算等级：</strong>${escapeHTML(place.budget)}</p>
+    <p><strong>适合月份：</strong>${place.month.join("、")} 月</p>
+    <button type="button" id="close-place-detail">关闭详情</button>
+  `;
+
+  dialog.querySelector("#close-place-detail").addEventListener(
+    "click",
+    () => dialog.close()
+  );
+
+  if (!dialog.open) {
+    dialog.showModal();
+  }
+  function resetFilters() {
   searchInput.value = "";
   monthSelect.value = "";
   regionSelect.value = "";
